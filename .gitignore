@@ -1,0 +1,9 @@
+.env
+env/**
+__pycache__
+test_jinja2
+frontend/*
+*.sqlite
+*.log
+tests*
+table_template.html

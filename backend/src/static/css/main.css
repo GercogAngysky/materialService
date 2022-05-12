@@ -1,0 +1,218 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI';
+}
+.header {
+    justify-content: space-around;
+    padding: 5px;
+    /* max-width: 100%; */
+    /* border: dotted 1px grey; */
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+nav .header-menu {
+    display: flex;
+    flex-flow: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+/* select {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 5px 15px;
+} */
+select,
+.submit {
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: medium;
+}
+select:hover,
+.submit:hover {
+    background-color: gainsboro;
+}
+
+/* pagination section */
+#pagination {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.pagination-pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    /* margin: 0 auto; */
+}
+.pagination-pages ul {
+    display: flex;
+    flex-flow: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.pagination-pages .page {
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    margin: 5px;
+    padding: 5px;
+    width: 22px;
+}
+.pagination-pages .page:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.page.activate {
+    background-color: lightgrey;
+}
+
+/* main section */
+#main {
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+    min-height: 45rem;
+}
+
+.wraper-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(230, 236, 230);
+    margin: 7px 0px;
+    border-radius: 5px;
+}
+.wraper-item .price {
+    font-weight: bold;
+}
+
+.image-item img {
+    margin: 7px;
+    width: 70px;
+    height: 70px;
+}
+
+table {
+    border: transparent;
+    letter-spacing: 1px;
+    margin: 7px;
+    width: 100%;
+    background-color: transparent;
+    height: 3em;
+}
+
+td {
+    text-align: left;
+}
+td.name-item {
+    cursor: pointer;
+}
+
+td.price {
+    text-align: center;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+/* sign-in tamplate */
+.auth {
+    width: 350px;
+    margin: 200px auto;
+}
+
+.auth input,
+.auth button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14pt;
+    padding: 15px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+/* modal windows */
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal {
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-overlay--visible {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.modal--visible {
+    display: flex;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+.modal input {
+    margin: 5px;
+    width: 400px;
+    font-size: 14pt;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.modal button {
+    margin: 5px;
+    width: 70px;
+    font-size: 14pt;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
