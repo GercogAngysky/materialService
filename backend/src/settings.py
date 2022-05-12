@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     server_port: int = 8000
     database_url: str = 'sqlite:////home/chram/code/projects/databases/database.sqlite'
 
-    jwt_secret: str
+    jwt_secret: str = ''
     jwt_algoritm: str = "HS256"
     jwt_expiration: int = 3600
 
