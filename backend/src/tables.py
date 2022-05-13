@@ -20,7 +20,7 @@ class User(Base):
     password_hash = Column(VARCHAR(255), nullable=False, unique=True)
 
     def __repr__(self):
-        return "<{0.__class__.__name__}(username{0.name}, id={0.id!r})>".format(self)
+        return "<{0.__class__.__name__}(username{0.username}, id={0.id!r})>".format(self)
 
 
 class BaseModel(Base):
