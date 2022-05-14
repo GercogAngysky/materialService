@@ -7,7 +7,8 @@ from services import PricesService, allow_get_items
 
 router = APIRouter()
 
-templates = Jinja2Templates(directory="backend/src/templates")
+templates = Jinja2Templates(directory="backend/src/templates")  # for run from directory /backend  __main__.py
+# templates = Jinja2Templates(directory="templates") # for run from directory /src 
 
 
 @router.get("/index", response_class=HTMLResponse)

@@ -28,7 +28,7 @@ class BaseRouter(APIRouter):
         def get(
             query: str = None,
             service: self.services = Depends(),
-            # allowed: allow_get_items = Depends()
+            allowed: allow_get_items = Depends()
         ):
             """
             метод принимает в "query" сроку типа:

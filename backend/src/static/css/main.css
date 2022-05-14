@@ -25,6 +25,7 @@ nav .header-menu {
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
+    padding: 5px;
 }
 /* select {
     border: 1px solid gainsboro;

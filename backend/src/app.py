@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
+
 from api import router
 
 
@@ -20,6 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/static", StaticFiles(directory="backend/src/static"), name="static")
+app.mount("/static", StaticFiles(directory="backend/src/static"), name="static") # for run from directory /backend  __main__.py
+# app.mount("/static", StaticFiles(directory="static"), name="static")  # for run from directory ../src 
 
 app.include_router(router)
