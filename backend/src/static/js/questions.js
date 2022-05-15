@@ -16,7 +16,7 @@ export class Question {
     }
 
     static async addItemsToLocalStorage(question) {
-        await fetch(`/${question}`, {
+        await fetch(`/${question}/`, {
             method: 'GET',
             headers: {
                 Authorization: "Bearer " + Question.access_token

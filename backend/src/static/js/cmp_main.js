@@ -45,18 +45,10 @@ export class Main {
                         modalOverlay.classList.remove('modal-overlay--visible')
                         form.classList.remove('modal--visible')
                     })
-
-
-
-
                     .then( Question.addItemsToLocalStorage('price') ) //reload data from server to localStorage
- 
- 
- 
- 
                     .catch(error => form.innerHTML = error)
                 })
-
+                
                 modalOverlay.replaceChildren(form)
 
                 modalOverlay.classList.add('modal-overlay--visible')
